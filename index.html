@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>ECommerce Landing Page</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <style>
+    body {
+      background-image: linear-gradient(to bottom right, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+    }
+
+    #card-custom {
+      width: 350px;
+      height: 500px;
+      background: hsla(0, 0%, 100%, 0.15);
+      backdrop-filter: blur(30px);
+    }
+
+
+    #shape-1 {
+      height: 220px;
+      width: 220px;
+      background: radial-gradient(#44006b, #ad1fff);
+      bottom: -100px;
+      left: -90px;
+    }
+
+    #shape-2 {
+      border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+      top: -100px;
+      right: 10px;
+      height: 300px;
+      width: 300px;
+      background: radial-gradient(#44006b, #ad1fff);
+      z-index: -10;
+    }
+
+
+    .fade {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      padding: auto;
+      animation-name: fade-in;
+    }
+
+    .animation-delay-small {
+      animation-delay: 0.15s;
+    }
+
+    .animation-delay-medium {
+      animation-delay: 0.3s;
+    }
+
+    .animation-delay-big {
+      animation-delay: 0.4s;
+    }
+
+    @keyframes fadein {
+      0% {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body class="vh-100">
+  <div class="container h-100 text-white">
+    <div class="row d-flex align-items-center h-100">
+      <div class="col-md-6">
+        <div class="fade">
+          <h1 class="mb-4 opacity 90" style="color:hsl(218,81%,95%);">Exclusive Offer</h1>
+          <h5 class="mb-4 opacity 80" style="color:hsl(218,81%,90%);">Lorem ipsum dolor sit amet.</h5>
+          <p class="mb-4 opacity 70" style="color:hsl(218,81%,85%);">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. In, deserunt
+            excepturi vitae rem ipsum blanditiis
+            dolor, velit est debitis, expedita quam reprehenderit tempora porro nulla dignissimos suscipit ipsa rerum
+            minus!</p>
+
+          <a href="#" class="btn btn-white btn-lg btn-rounded me-3 opacity-80" role="button"
+            data-ripple-color="hsl(218, 41%, 45%)">Buy
+            Now</a>
+          <a href="#" class="btn btn-outline-white btn-lg btn-rounded me-3 opacity-80" role="button">Learn More</a>
+        </div>
+      </div>
+      <div class="col-md-5 offset-md-1 position-relative">
+        <div id="shape-1" class="position-absolute rounded-circle strong-5-strong fade animation-delay-small"></div>
+        <div id="shape-2" class="position-absolute strong-5-strong fade animation-delay-medium"></div>
+
+        <div id="card-custom" class="card shadow-6 rounded-6 fade animation-delay-big">
+          <div class="card-body p-5 opacity-90 ls-widest">
+            <h2>
+              <strong>Platinum Card</strong>
+              <span class="fw-light">card</span>
+            </h2>
+          </div>
+
+          <div class="card-footer border-0 px-5 opacity-90 ls-widest fw-light">
+            <img src="https://ascensus-youtube-projects.mdbgo.io/img/chip.png" alt="" class="mb-5" style="width:50px">
+            <h5 class="mb-5">1234 5678 9012 3456</h5>
+            <p class="mb-2">John Doe</p>
+            <p class="mb-5">12/25</p>
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+
+
+  <!-- Custom scripts -->
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelector("#card-custom"), {
+      startX: 45,
+      startY: 45,
+      reset: false,
+    })
+  </script>
+
+</body>
+
+</html>
